@@ -28,7 +28,6 @@ public class string_builder {
         // sb.reverse();
         // System.out.println(sb);
 
-
         // reverse
         // for(int i = 0; i < sb.length()/2; i++){
         //     int front = i;
