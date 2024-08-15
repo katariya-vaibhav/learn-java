@@ -1,6 +1,9 @@
 package oops;
 
-class pen {
+
+
+// when we create a class make sure the first latter of class is capital
+class Pen {
 
 
     // public - use anywhere
@@ -13,10 +16,17 @@ class pen {
 
 
     // constructor for set values
-    pen(String color, int price, String type) {
+    // constructor name is always the same as the class name
+    Pen(String color, int price, String type) {
         this.color = color;
         this.price = price;
         this.type = type;
+    }
+    // copy constructor
+    Pen(Pen pen) {
+        this.color = pen.color;
+        this.price = pen.price;
+        this.type = pen.type;
     }
 
 
@@ -38,20 +48,25 @@ class pen {
 
 }
 
+
 public class class_object {
 
     public static void main(String[] args) {
         
         // create object
-        pen pen1 = new pen("black", 100, "simple");
+        Pen pen1 = new Pen("black", 100, "simple");
         pen1.display();
         
+        // create copy of object
+        Pen pen2 = new Pen(pen1);
+        pen2.display();
+        
         // change color
-        pen1.setColor("red");
-        pen1.display();
+        // pen1.setColor("red");
+        // pen1.display();
 
-        // get pen color
-        System.out.println("Pen color: " + pen1.getColor());
+        // // get pen color
+        // System.out.println("Pen color: " + pen1.getColor());
         
     }
 }
