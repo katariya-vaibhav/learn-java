@@ -9,8 +9,7 @@ class Student {
         this.age = age;
     }
 
-    // functions overloading
-    
+    // functions overloading - function name same and arguments are different / different return type
     void display(String name){
         System.out.println("Name: " + name);
     }
