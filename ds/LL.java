@@ -1,3 +1,4 @@
+import java.util.*;
 
 public class LL {
     // Node head;
@@ -106,5 +107,26 @@ public class LL {
 
         // list.size();
         // System.out.println("Size: " + list.size());
+
+
+        LinkedList<String> list = new LinkedList<String>();
+        list.addFirst("hello");
+        list.addFirst("world");
+        System.out.println(list);
+        list.addLast("java");
+        list.addLast("developer");
+        System.out.println(list);
+
+        list.removeFirst();
+        System.out.println(list);
+        list.removeLast();
+        System.out.println(list);
+
+        System.out.println(list.size());
+
+        for(int i=0; i<list.size(); i++){
+            System.out.print(list.get(i)+ "--");
+        }
+
     }
 }
