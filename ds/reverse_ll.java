@@ -1,5 +1,3 @@
-import org.w3c.dom.Node;
-
 public class reverse_ll {
     Node head;
 
@@ -55,6 +53,18 @@ public class reverse_ll {
         head = prevNode;
     }
 
+    public Node reverse_recursive(Node head) {
+
+        if (head == null || head.next == null){
+            return head;  // Base case: when the list has only one node or is empty
+        }
+
+        Node newHead = reverse_recursive(head.next);
+        head.next.next = head;
+        head.next = null;
+        return newHead;
+    }
+
     public static void main(String[] args) {
         reverse_ll list = new reverse_ll();
         list.addLast(5);
@@ -62,7 +72,8 @@ public class reverse_ll {
         list.addLast(7);
         list.addLast(8);
         list.printList();
-        list.reverse_iterate();
+        //list.reverse_iterate();
+        list.head = list.reverse_recursive(list.head);
         list.printList();
     }
 }
