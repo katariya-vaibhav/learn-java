@@ -5,6 +5,7 @@ A queue is a linear data structure that follows the FIFO (First In, First Out) p
 
 ---
 
+
 Queue Syntax in Java
 
 Java provides a built-in `Queue` interface in the `java.util` package, which is implemented by classes like `LinkedList` and `PriorityQueue`.
