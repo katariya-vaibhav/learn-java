@@ -1,0 +1,33 @@
+# Define the problem statement as a string
+problem_statement
+DSA Problem: Find the Longest Palindromic Substring
+
+Problem Statement:
+Given a string s, return the longest palindromic substring in s.
+
+Example 1:
+Input: s = "babad"
+Output: "bab"
+Explanation: "aba" is also a valid answer.
+
+Example 2:
+Input: s = "cbbd"
+Output: "bb"
+
+Example 3:
+Input: s = "a"
+Output: "a"
+
+Example 4:
+Input: s = "ac"
+Output: "a"
+
+Constraints:
+- 1 <= s.length <= 1000
+- s consists only of printable ASCII characters.
+
+Solution Approach:
+1. Iterate through each character and consider it as a center.
+2. Expand in both directions while characters match.
+3. Keep track of the longest palindrome found.
+4. Return the longest palindromic substring.
