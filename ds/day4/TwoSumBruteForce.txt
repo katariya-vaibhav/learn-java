@@ -1,0 +1,32 @@
+Define the problem statement as a string
+problem_statement = 
+Problem Statement: Two Sum (Without Using HashMap)
+
+You are given an array of integers `nums` and an integer `target`. Your task is to find the indices of two numbers in the array such that their sum equals `target`.  
+
+Constraints:
+- The given array may or may not be sorted.  
+- You must solve this problem **without using a HashMap**.  
+- You **cannot use the same element twice**.  
+- Assume there is exactly **one unique solution**.  
+
+Example 1:
+Input:
+nums = [2, 7, 11, 15], target = 9
+
+Output:
+[0, 1]
+
+Explanation:
+- nums[0] + nums[1] = 2 + 7 = 9, which matches the target.  
+- So, we return [0,1].
+
+Example 2:
+Input:
+nums = [3, 2, 4], target = 6
+
+Output:
+[1, 2]
+
+Explanation:
+- nums[1] + nums[2] = 2 + 4 = 6, which matches the target.
