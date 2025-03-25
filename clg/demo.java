@@ -18,5 +18,6 @@ public class demo {
         demo outer = new demo();
         thread t1 = outer.new thread();
         t1.start();
+        System.out.println("Thread is alive: " + t1.isAlive());  
     }
 }
