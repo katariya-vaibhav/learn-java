@@ -30,6 +30,18 @@ public class main {
         void reverseString(String str) {
             StringBuffer sb = new StringBuffer(str);
             System.out.println("Reversed String: " + sb.reverse());
+            String splitStr[] = str.split(" ");
+            StringBuffer s = new StringBuffer();
+	    for (String word : splitStr) {
+	    	System.out.println(word);
+            	if (word.length() > 0) {
+                	s.append(Character.toUpperCase(word.charAt(0))) // First letter uppercase
+                           .append(word.substring(1).toLowerCase())       // Rest letters lowercase
+                           .append(" ");
+            	}
+             }
+		System.out.println(s.toString().trim());
+
         }
     }
 
