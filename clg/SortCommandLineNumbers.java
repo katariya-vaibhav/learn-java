@@ -29,3 +29,12 @@ public class SortCommandLineNumbers {
         }
     }
 }
+
+
+//output
+
+//javac SortCommandLineNumbers.java
+//java SortCommandLineNumbers 23 5 12 9 1
+
+//Sorted numbers:
+//1 5 9 12 23
